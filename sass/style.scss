@@ -16,6 +16,7 @@
 @import 'base/breadcrumbs';
 @import 'base/promo';
 @import 'base/story';
+@import 'base/study';
 
 @import 'base/footer';
 
@@ -85,6 +86,7 @@ section, header, footer {
 
 .main {
   margin-top: 135px;
+  margin-bottom: 130px;
 }
 
 button:active, button:focus {
