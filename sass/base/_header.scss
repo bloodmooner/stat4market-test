@@ -59,6 +59,7 @@
     }
 
     &__logo-icon {
+        width: 62px;
         @include for-desk {
             width: 48px;
         }

@@ -49,8 +49,19 @@
             <div class="header__leftside">
               <div class="header__logo">
                 <a class="header__logo-container" href="#" >
-                  <img class="header__logo-icon" src="assets/svg/logo.svg" alt="" >
-                  <img class="header__logo-text" src="assets//svg/logo-text.svg" alt="" /> 
+                  <picture>
+                    <source type="image/webp" 
+                    srcset="assets/img/logo.webp">
+                    <img 
+                    class="header__logo-icon" 
+                    src="assets/img/logo.png" 
+                    alt="text" 
+                    data-src="assets/img/logo.png" 
+                    srcset="assets/img/logo.png" 
+                    loading="lazy"
+                    >
+                  </picture>
+                  <svg class="header__logo-text icon icon-logo-text"><use xlink:href="symbol-defs.svg#icon-logo-text"></use></svg>
                 </a>
                 <p class="header__logo-slogan">
                   Надежный сервис аналитики для поставщиков на маркетплейсы
@@ -62,7 +73,7 @@
                     <a class="header__menu-link" href="#" >
                       Аналитика
                     </a>
-                    <img class="header__menu-icon" src="assets/svg/dd-arrow.svg" alt="" >
+                    <svg class="header__menu-icon icon icon-dd-arrow"><use xlink:href="symbol-defs.svg#icon-dd-arrow"></use></svg>
                   </li>
                   <li class="header__menu-item">
                     <a class="header__menu-link" href="#study" >
@@ -74,19 +85,19 @@
             </div>
             <div class="header__rightside">
               <a class="header__phone" href="tel:+74994503141" >
-                <img class="header__phone-icon" src="assets/svg/phone.svg" alt="" >
+                <svg class="header__phone-icon icon icon-phone"><use xlink:href="symbol-defs.svg#icon-phone"></use></svg>
                 <span class="header__phone-text">
                   8 (499) 450-31-41
                 </span>
               </a>
               <a class="btn header__login" href="#" >
                 <div class="header__login-content">
-                  <img class="header__login-icon" src="assets/svg/login.svg" alt="" >
+                  <svg class="header__login-icon icon icon-login"><use xlink:href="symbol-defs.svg#icon-login"></use></svg>
                   <span class="header__login-text">Войти</span>
                 </div>
               </a>
               <span class="header__burger burger">
-                <img class="header__burger-icon" src="assets/svg/burger.svg" alt="" >
+                <svg class="header__burger-icon icon icon-burger"><use xlink:href="symbol-defs.svg#icon-burger"></use></svg>
               </span>
             </div>
           </div>
@@ -95,7 +106,7 @@
         <div class="header-mobile">
           <div class="header-mobile__top">
             <div class="header-mobile__close">
-              <img class="header-mobile__close-image" alt="test" src="assets/svg/bclose.svg" width="19" height="19"></div>
+              <svg class="header-mobile__close-image icon icon-bclose" width="19" height="19"><use xlink:href="symbol-defs.svg#icon-bclose"></use></svg>
           </div>
           <div class="header-mobile__wrapper">
             <nav class="header-mobile__nav">
@@ -167,7 +178,7 @@
                для поставщиков на маркетплейсы
             </h1>
             <div class="promo__price">
-              <img src="assets/svg/wallet.svg" alt="" class="promo__price-icon">
+              <svg class="promo__price-icon icon icon-wallet"><use xlink:href="symbol-defs.svg#icon-wallet"></use></svg>
               <p class="promo__price-cost">
                 от <span class="promo__price-number">19 900</span> ₽
               </p>
@@ -268,7 +279,7 @@
           <ul class="study__list">
             <li class="study__item">
               <div class="study__icon">
-                <img class="study__image" src="assets/svg/advantages/target.svg" alt="" >
+                <svg class="study__image icon icon-target"><use xlink:href="symbol-defs.svg#icon-target"></use></svg>
               </div>
               <h4 class="study__name">
                 Наше обучение построено очень лаконично и просто
@@ -279,7 +290,7 @@
             </li>
             <li class="study__item">
               <div class="study__icon">
-                <img class="study__image" src="assets/svg/advantages/materials.svg" alt="" >
+                <svg class="study__image icon icon-materials"><use xlink:href="symbol-defs.svg#icon-materials"></use></svg>
               </div>
               <h4 class="study__name">
                 Ко всем урокам есть дополнительные материалы
@@ -290,7 +301,7 @@
             </li>
             <li class="study__item">
               <div class="study__icon">
-                <img class="study__image" src="assets/svg/advantages/friends.svg" alt="" >
+                <svg class="study__image icon icon-friends"><use xlink:href="symbol-defs.svg#icon-friends"></use></svg>
               </div>
               <h4 class="study__name">
                 Наше обучение — практико-ориентированное
@@ -301,7 +312,7 @@
             </li>
             <li class="study__item">
               <div class="study__icon">
-                <img class="study__image" src="assets/svg/advantages/creators.svg" alt="" >
+                  <svg class="study__image icon icon-creators"><use xlink:href="symbol-defs.svg#icon-creators"></use></svg>
               </div>
               <h4 class="study__name">
                 Создатели нашей Академии
@@ -328,6 +339,7 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="assets/libs/svgxuse.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
