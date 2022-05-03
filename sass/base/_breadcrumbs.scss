@@ -36,5 +36,9 @@
         font-size: 16px;
         line-height: 19px;
         color: rgba(51, 26, 47, 0.5);
+        @include animated-link;
+        &:hover {
+            @include animated-link-hover;
+        }
     }
 }

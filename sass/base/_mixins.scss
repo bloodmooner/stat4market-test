@@ -10,3 +10,12 @@
 @mixin for-desk {
   @media (max-width: 1700px) { @content; }
 }
+
+
+@mixin animated-link {
+  transition: all 0.2s;
+}
+@mixin animated-link-hover {
+  text-decoration: none;
+  color: #CF51CE;
+}

@@ -393,6 +393,10 @@ template {
   width: 100%;
 }
 
+.header__logo-container:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 1700px) {
   .header__logo-container {
     margin-right: 14px;
@@ -532,6 +536,8 @@ template {
   font-size: 24px;
   line-height: 35px;
   color: #331A2F;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @media (max-width: 1700px) {
@@ -539,6 +545,11 @@ template {
     font-size: 18px;
     line-height: 35px;
   }
+}
+
+.header__menu-link:hover {
+  text-decoration: none;
+  color: #CF51CE;
 }
 
 .header__menu-icon {
@@ -585,6 +596,15 @@ template {
   }
 }
 
+.header__phone:hover {
+  text-decoration: none;
+}
+
+.header__phone:hover .header__phone-text {
+  text-decoration: none;
+  color: #CF51CE;
+}
+
 .header__phone-icon {
   margin-right: 16px;
 }
@@ -595,6 +615,8 @@ template {
   font-size: 24px;
   line-height: 35px;
   color: #331A2F;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @media (max-width: 1700px) {
@@ -744,6 +766,13 @@ template {
   font-size: 16px;
   line-height: 19px;
   color: rgba(51, 26, 47, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: none;
+  color: #CF51CE;
 }
 
 .promo {

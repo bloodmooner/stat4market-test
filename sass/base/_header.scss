@@ -43,6 +43,9 @@
         display: block;
         max-width: 240px;
         width: 100%;
+        &:hover {
+            text-decoration: none;
+        }
         @include for-desk {
             margin-right: 14px;
             top: -32px;
@@ -144,6 +147,10 @@
             font-size: 18px;
             line-height: 35px;
         }
+        @include animated-link;
+        &:hover {
+            @include animated-link-hover;
+        }
     }
 
     &__menu-icon {
@@ -168,6 +175,13 @@
         @include for-tablet {
             display: none;
         }
+        
+        &:hover {
+            text-decoration: none;
+            .header__phone-text {
+                @include animated-link-hover;
+            }
+        }
     }
 
     &__phone-icon {
@@ -184,6 +198,8 @@
             font-size: 18px;
             line-height: 35px;
         }
+        @include animated-link;
+        
     }
 
     &__login {
