@@ -2,6 +2,15 @@
     list-style-type: none;
     display: flex;
     column-gap: 26px;
+    @include for-tablet {
+        padding-left: 8px;
+        padding-top: 3px;
+        column-gap: 21px;
+    }
+    @include for-phone {
+        padding-left: 0;
+        padding-top: 17px;
+    }
     &__item {
         position: relative;
         &::before {

@@ -4,6 +4,9 @@
         max-width: 1320px;
         width: 100%;
         margin: 0 auto;
+        @include for-desk {
+            max-width: 995px;
+        }
     }
 
     &__title {
@@ -14,6 +17,15 @@
         line-height: 64px;
         text-align: center;
         color: #331A2F;
+        @include for-desk {
+            max-width: 776px;
+            font-size: 40px;
+            line-height: 64px;
+        }
+        @include for-phone {
+            font-size: 24px;
+            line-height: 36px;
+        }
     }
 
     &__items {
@@ -24,9 +36,26 @@
         display: flex;
         align-items: center;
         gap: 80px;
+        @include for-tablet {
+            gap: 40px;
+            margin-bottom: 54px;
+        }
+        @include for-phone {
+            flex-direction: column;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
     }
 
     &__image {
+        @include for-desk {
+            max-width: 36%;
+            width: 100%;
+        }
+        @include for-phone {
+            max-width: 82%;
+            margin: 0 auto;
+        }
     }
 
     &__text {
@@ -41,6 +70,14 @@
         font-size: 25px;
         line-height: 40px;
         color: rgba(51, 26, 47, 0.8);
+        @include for-desk {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        @include for-phone {
+            font-size: 18px;
+            line-height: 29px;
+        }
     }
 }
 

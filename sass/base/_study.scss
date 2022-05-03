@@ -2,6 +2,12 @@
 
     &__wrapper {
         margin-top: 140px;
+        @include for-desk {
+            margin-top: 132px;
+        }
+        @include for-tablet {
+            margin-top: 104px;
+        }
     }
 
     &__title {
@@ -12,6 +18,14 @@
         line-height: 64px;
         text-align: center;
         color: #331A2F;
+        @include for-desk {
+            font-size: 40px;
+            line-height: 64px;
+        }
+        @include for-phone {
+            font-size: 24px;
+            line-height: 36px;
+        }
         &_logo {
             position: relative;
             &::after {
@@ -23,6 +37,12 @@
                 left: 0;
                 background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
                 border-radius: 5px;
+                @include for-desk {
+                    bottom: -15px;
+                }
+                @include for-tablet {
+                    bottom: -13px;
+                }
             }
         }
         &_markup {
@@ -40,6 +60,18 @@
         line-height: 160%;
         text-align: center;
         color: rgba(51, 26, 47, 0.8);
+        @include for-desk {
+            max-width: 729px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        @include for-tablet {
+            margin: 27px auto 0 auto;
+        }
+        @include for-phone {
+            font-size: 18px;
+            line-height: 29px;
+        }
     }
 
     &__list {
@@ -48,9 +80,32 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 123px;
+        @include for-desk {
+            gap: 88px;
+        }
+        @include for-tablet {
+            max-width: 570px;
+            width: 100%;
+            margin: 80px auto 0 auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+        @include for-phone {
+            max-width: 79%;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        @include for-phone {
+            margin: 51px auto 0 auto;
+        }
     }
 
     &__item {
+        @include for-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__icon {
@@ -62,9 +117,17 @@
         background: #CF51CE;
         box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
         border-radius: 15px;
+        @include for-desk {
+            width: 60px;
+            height: 60px;
+        }
     }
 
     &__image {
+        @include for-desk {
+            max-width: 60%;
+            width: 100%;
+        }
     }
 
     &__name {
@@ -74,7 +137,17 @@
         font-size: 24px;
         line-height: 36px;
         color: #331A2F;
-
+        @include for-desk {
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include for-phone {
+            margin-top: 23px;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -84,6 +157,16 @@
         font-size: 18px;
         line-height: 29px;
         color: rgba(51, 26, 47, 0.8);
+        @include for-desk {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        @include for-phone {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
     }
 }
 

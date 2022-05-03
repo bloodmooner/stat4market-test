@@ -6,16 +6,37 @@
         &_left {
             left: 0;
             top: 0;
+            @include for-desk {
+                left: -68px;
+            }
+            @include for-tablet {
+                display: none;
+            }
         }
 
         &_right {
             right: 0;
             bottom: -311px;
+            @include for-desk {
+                display: none;
+            }
         }
     }
 
+    
+
     &__wrapper {
         margin-top: 60px;
+        @include for-desk {
+            margin-top: 66px;
+        }
+        @include for-tablet {
+            padding-left: 15px;
+            margin-top: 42px;
+        }
+        @include for-phone {
+            margin-top: 10px;
+        }
     }
 
     &__content {
@@ -23,15 +44,35 @@
         display: grid;
         grid-template-columns: 1fr 620px;
         gap: 42px;
+        @include for-desk {
+            grid-template-columns: 1fr 460px;
+            gap: 31px;
+        }
+        @include for-tablet {
+            grid-template-columns: 1fr;
+            position: relative;
+        }
+        @include for-phone {
+            margin-top: 40px;
+        }
     }
 
     &__caption {
     }
 
     &__title {
-        
         font-size: 56px;
         line-height: 80px;
+        @include for-desk {
+            font-size: 46px;
+            line-height: 65px;
+        }
+        @include for-phone {
+            max-width: 62%;
+            width: 100%;
+            font-size: 26px;
+            line-height: 39px;
+        }
     }
 
     &__title-markup {
@@ -43,6 +84,15 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        @include for-desk {
+            margin-top: 37px;
+        }
+        @include for-tablet {
+            margin-top: 13px;
+        }
+        @include for-phone {
+            margin-top: 24px;
+        }
     }
 
     &__price-icon {
@@ -54,6 +104,10 @@
         font-size: 35px;
         line-height: 29px;
         color: rgba(51, 26, 47, 0.8);
+        @include for-tablet {
+            font-size: 29px;
+            line-height: 29px;
+        }
     }
 
     &__price-number {
@@ -65,7 +119,21 @@
 
     &__text {
         margin-top: 16px;
-    }
+        @include for-desk {
+            margin-top: 40px;
+        }
+        @include for-tablet {
+            margin-top: 17px;
+            padding-left: 4px;
+            max-width: 69%;
+            width: 100%;
+        }
+        @include for-phone {
+            max-width: 100%;
+            padding-right: 15px;
+        }
+    }    
+
 
     &__paragraph {
         margin-bottom: 15px;
@@ -74,13 +142,34 @@
         font-size: 25px;
         line-height: 40px;
         color: rgba(51, 26, 47, 0.8);
+        @include for-desk {
+            font-size: 20px;
+            line-height: 32px;
+        }
     }
 
     &__image {
         max-width: 620px;
         width: 100%;
+        @include for-tablet {
+            width: 250px;
+            height: 450px;
+            position: absolute;
+            right: 0;
+            top: 147px;
+            object-fit: cover;
+            object-position: 10% 10%; 
+        }
+        @include for-phone {
+            width: 135px;
+            height: 270px;
+            top: -45px;
+        }
     }
+    
 }
 
-
+.promo .promo__container {
+    padding: 0;
+}
 

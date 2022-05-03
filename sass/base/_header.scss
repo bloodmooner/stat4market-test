@@ -2,6 +2,15 @@
 
     &__outer {
         padding-top: 37px;
+        @include for-desk {
+            padding-top: 54px;
+        }
+        @include for-tablet {
+            padding-top: 35px;
+        }
+        @include for-phone {
+            padding-top: 21px;
+        }
     }
 
     &__wrapper {
@@ -9,6 +18,9 @@
         justify-content: space-between;
         align-items: center;
         height: 80px;
+        @include for-desk {
+            height: 62px;
+        }
     }
 
     &__leftside {
@@ -31,14 +43,43 @@
         display: block;
         max-width: 240px;
         width: 100%;
+        @include for-desk {
+            margin-right: 14px;
+            top: -32px;
+        }
+        @include for-tablet {
+            top: -39px;
+        }
+        @include for-phone {
+            top: -25px;
+        }
     }
 
     &__logo-icon {
+        @include for-desk {
+            width: 48px;
+        }
+        @include for-phone {
+            width: 35px;
+        }
     }
 
     &__logo-text {
         margin-top: 65px;
         margin-left: 13px;
+        @include for-desk {
+            width: 126px;
+            margin-top: 23px;
+            margin-left: 9px;
+        }
+        @include for-tablet {
+            margin-top: 73px;
+        }
+        @include for-phone {
+            width: 95px;
+            margin-top: 49px;
+            margin-left: 7px;
+        }
     }
 
     &__logo-slogan {
@@ -59,14 +100,28 @@
             position: absolute;
             left: 0;
             top: 0;
-            
             height: 80px;
             width: 1px;
             background: rgba(51, 26, 47, 0.5);
+            @include for-desk {
+                height: 62px;
+            }
+        }
+        @include for-desk {
+            font-size: 10px;
+            line-height: 14px;
+            padding-left: 20px;
+            max-width: 158px;
+        }
+        @include for-phone {
+            display: none;
         }
     }
 
     &__menu {
+        @include for-tablet {
+            display: none;
+        }
     }
 
     &__menu-list {
@@ -74,6 +129,9 @@
         display: flex;
         align-items: center;
         column-gap: 50px;
+        @include for-desk {
+            column-gap: 40px;
+        }
     }
 
     &__menu-item {
@@ -85,6 +143,10 @@
         font-size: 24px;
         line-height: 35px;
         color: #331A2F;
+        @include for-desk {
+            font-size: 18px;
+            line-height: 35px;
+        }
     }
 
     &__menu-icon {
@@ -95,11 +157,20 @@
         display: flex;
         align-items: center;
         column-gap: 91px;
+        @include for-tablet {
+            column-gap: 81px;
+        }
+        @include for-phone {
+            column-gap: 22px;
+        }
     }
 
     &__phone {
         display: flex;
         align-items: center;
+        @include for-tablet {
+            display: none;
+        }
     }
 
     &__phone-icon {
@@ -112,6 +183,10 @@
         font-size: 24px;
         line-height: 35px;
         color: #331A2F;
+        @include for-desk {
+            font-size: 18px;
+            line-height: 35px;
+        }
     }
 
     &__login {
@@ -119,6 +194,19 @@
         max-height: 45px;
         &:hover {
             text-decoration: none;
+        }
+        @include for-desk {
+            max-width: 152px;
+            padding: 12px 32px;
+        }
+        @include for-tablet {
+            max-width: 156px;
+            padding: 12px 36px;
+        }
+        @include for-phone {
+            max-width: 103px;
+            max-height: 36px;
+            padding: 11px 20px;
         }
     }
 
@@ -129,6 +217,12 @@
 
     &__login-icon {
         margin-right: 14px;
+        @include for-desk {
+            width: 20px;
+        }
+        @include for-phone {
+            width: 14px;
+        }
     }
 
     &__login-text {
@@ -138,7 +232,26 @@
         line-height: 35px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        
+        @include for-desk {
+            font-size: 18px;
+            line-height: 35px;
+        }
+        @include for-phone {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+
+    &__burger {
+        display: none;
+        @include for-tablet {
+            display: block;
+        }
+    }
+
+    &__burger-icon {
     }
 }
+
+
 
