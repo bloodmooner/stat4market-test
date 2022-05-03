@@ -14,8 +14,7 @@
         "../sass/base/_breadcrumbs.scss",
         "../sass/base/_promo.scss",
         "../sass/base/_story.scss",
-        "../sass/base/_study.scss",
-        "../sass/base/_footer.scss"
+        "../sass/base/_study.scss"
     ],
     "names": [],
     "file": "style.css"
