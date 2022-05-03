@@ -134,9 +134,6 @@
         }
     }
 
-    &__menu-item {
-    }
-
     &__menu-link {
         font-style: normal;
         font-weight: 400;
@@ -247,9 +244,6 @@
         @include for-tablet {
             display: block;
         }
-    }
-
-    &__burger-icon {
     }
 }
 
