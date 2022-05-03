@@ -207,7 +207,9 @@
         max-height: 45px;
         &:hover {
             text-decoration: none;
+            background-color: #BA48B9;
         }
+        @include animated-link;
         @include for-desk {
             max-width: 152px;
             padding: 12px 32px;
