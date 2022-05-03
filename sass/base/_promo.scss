@@ -23,8 +23,6 @@
         }
     }
 
-    
-
     &__wrapper {
         margin-top: 60px;
         @include for-desk {
@@ -57,8 +55,6 @@
         }
     }
 
-    &__caption {
-    }
 
     &__title {
         font-size: 56px;
@@ -93,9 +89,6 @@
         @include for-phone {
             margin-top: 24px;
         }
-    }
-
-    &__price-icon {
     }
 
     &__price-cost {
