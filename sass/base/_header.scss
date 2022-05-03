@@ -1,0 +1,144 @@
+.header {
+
+    &__outer {
+        padding-top: 37px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    &__leftside {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        height: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__logo-container {
+        position: relative;
+        top: -39px;
+        margin-right: 18px;
+        display: block;
+        max-width: 240px;
+        width: 100%;
+    }
+
+    &__logo-icon {
+    }
+
+    &__logo-text {
+        margin-top: 65px;
+        margin-left: 13px;
+    }
+
+    &__logo-slogan {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 25px;
+        max-width: 207px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(51, 26, 47, 0.9);
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+            height: 80px;
+            width: 1px;
+            background: rgba(51, 26, 47, 0.5);
+        }
+    }
+
+    &__menu {
+    }
+
+    &__menu-list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    &__menu-item {
+    }
+
+    &__menu-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #331A2F;
+    }
+
+    &__menu-icon {
+        margin-left: 12px;
+    }
+
+    &__rightside {
+        display: flex;
+        align-items: center;
+        column-gap: 91px;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone-icon {
+        margin-right: 16px;
+    }
+
+    &__phone-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #331A2F;
+    }
+
+    &__login {
+        max-width: 169px;
+        max-height: 45px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__login-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__login-icon {
+        margin-right: 14px;
+    }
+
+    &__login-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        
+    }
+}
+

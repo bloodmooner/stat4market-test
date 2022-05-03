@@ -4,6 +4,7 @@
 @import 'base/variables';
 @import 'base/animations';
 @import 'base/buttons';
+@import 'base/title';
 
 
 
@@ -12,6 +13,9 @@
 
 @import 'base/header';
 @import 'base/header-mobile';
+@import 'base/breadcrumbs';
+@import 'base/promo';
+
 @import 'base/footer';
 
 
@@ -55,11 +59,10 @@ section, header, footer {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1530px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 0 25px;
   @include for-desktop {
     max-width: 1200px;
   }
