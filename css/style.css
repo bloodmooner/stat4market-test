@@ -611,6 +611,50 @@ template {
   width: 100%;
 }
 
+.story__wrapper {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.story__title {
+  max-width: 844px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #331A2F;
+}
+
+.story__items {
+  margin-top: 85px;
+}
+
+.story__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+}
+
+.story__text {
+  max-width: 750px;
+  width: 100%;
+}
+
+.story__paragraph {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  color: rgba(51, 26, 47, 0.8);
+}
+
 /*
 
 
@@ -677,6 +721,10 @@ section, header, footer {
     max-width: 100%;
     padding: 0 16px;
   }
+}
+
+.main {
+  margin-top: 135px;
 }
 
 button:active, button:focus {

@@ -15,6 +15,7 @@
 @import 'base/header-mobile';
 @import 'base/breadcrumbs';
 @import 'base/promo';
+@import 'base/story';
 
 @import 'base/footer';
 
@@ -80,6 +81,10 @@ section, header, footer {
     max-width: 100%;
     padding: 0 16px;
   }
+}
+
+.main {
+  margin-top: 135px;
 }
 
 button:active, button:focus {
