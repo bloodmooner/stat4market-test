@@ -122,12 +122,18 @@
 
     <div class="container promo__container">
       <div class="promo__wrapper">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" >Главная</a>
+        <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="breadcrumbs__link" href="/" title="Главная" itemprop="item" >
+              <span itemprop="name">Главная</span>
+              <meta itemprop="position" content="0">
+            </a>
           </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#" >Обучение</a>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="breadcrumbs__link" href="/study/" title="Обучение" itemprop="item" >
+              <span itemprop="name">Обучение</span>
+              <meta itemprop="position" content="1">
+            </a>
           </li>
         </ul>
         <div class="promo__content">
