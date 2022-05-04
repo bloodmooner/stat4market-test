@@ -1493,6 +1493,12 @@ Single-colored icons can be modified like so:
   gap: 80px;
 }
 
+@media (max-width: 1700px) {
+  .story__item picture {
+    width: 62%;
+  }
+}
+
 @media (max-width: 1280px) {
   .story__item {
     gap: 40px;
@@ -1518,7 +1524,7 @@ Single-colored icons can be modified like so:
 
 @media (max-width: 1700px) {
   .story__image {
-    max-width: 36%;
+    max-width: 100%;
     width: 100%;
   }
 }
