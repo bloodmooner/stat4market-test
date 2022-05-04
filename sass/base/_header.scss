@@ -71,6 +71,8 @@
     &__logo-text {
         margin-top: 65px;
         margin-left: 13px;
+        width: 161px;
+        height: 38px;
         @include for-desk {
             width: 126px;
             margin-top: 23px;
@@ -156,6 +158,9 @@
 
     &__menu-icon {
         margin-left: 12px;
+        width: 13px;
+        height: 12px;
+        fill: #331A2F;
     }
 
     &__rightside {
@@ -187,6 +192,9 @@
 
     &__phone-icon {
         margin-right: 16px;
+        width: 19px;
+        height: 19px;
+        fill: #331A2F;
     }
 
     &__phone-text {
@@ -233,11 +241,15 @@
 
     &__login-icon {
         margin-right: 14px;
+        width: 23px;
+        height: 23px;
         @include for-desk {
             width: 20px;
+            height: 20px;
         }
         @include for-phone {
             width: 14px;
+            height: 14px;
         }
     }
 

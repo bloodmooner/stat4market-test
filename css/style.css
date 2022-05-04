@@ -321,6 +321,50 @@ template {
   color: #331A2F;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-burger {
+  width: 1.5em;
+}
+
+.icon-dd-arrow {
+  width: 1.111328125em;
+}
+
+.icon-logo {
+  width: 1.90625em;
+}
+
+.icon-logo-text {
+  width: 6.75em;
+}
+
+.icon-materials {
+  width: 1.1162109375em;
+}
+
+.icon-phone {
+  width: 1.052734375em;
+}
+
+.icon-wallet {
+  width: 1.021484375em;
+}
+
 .header__outer {
   padding-top: 37px;
 }
@@ -435,6 +479,8 @@ template {
 .header__logo-text {
   margin-top: 65px;
   margin-left: 13px;
+  width: 161px;
+  height: 38px;
 }
 
 @media (max-width: 1700px) {
@@ -558,6 +604,9 @@ template {
 
 .header__menu-icon {
   margin-left: 12px;
+  width: 13px;
+  height: 12px;
+  fill: #331A2F;
 }
 
 .header__rightside {
@@ -611,6 +660,9 @@ template {
 
 .header__phone-icon {
   margin-right: 16px;
+  width: 19px;
+  height: 19px;
+  fill: #331A2F;
 }
 
 .header__phone-text {
@@ -675,17 +727,21 @@ template {
 
 .header__login-icon {
   margin-right: 14px;
+  width: 23px;
+  height: 23px;
 }
 
 @media (max-width: 1700px) {
   .header__login-icon {
     width: 20px;
+    height: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .header__login-icon {
     width: 14px;
+    height: 14px;
   }
 }
 
@@ -1243,6 +1299,11 @@ template {
   }
 }
 
+.promo__price-icon {
+  width: 48px;
+  height: 46px;
+}
+
 .promo__price-cost {
   font-style: normal;
   font-weight: 400;
@@ -1404,6 +1465,11 @@ template {
             flex-direction: column;
     margin-bottom: 40px;
     gap: 30px;
+  }
+  .story__item picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1635,6 +1701,11 @@ template {
   }
 }
 
+.study__image {
+  width: 50px;
+  height: 50px;
+}
+
 @media (max-width: 1700px) {
   .study__image {
     max-width: 60%;
@@ -1771,49 +1842,5 @@ button:active, button:focus {
 
 button::-moz-focus-inner {
   border: 0;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-  font-size: 32px;
-  color: red;
-}
-========================================== */
-.icon-burger {
-  width: 1.5em;
-}
-
-.icon-dd-arrow {
-  width: 1.111328125em;
-}
-
-.icon-logo {
-  width: 1.90625em;
-}
-
-.icon-logo-text {
-  width: 6.75em;
-}
-
-.icon-materials {
-  width: 1.1162109375em;
-}
-
-.icon-phone {
-  width: 1.052734375em;
-}
-
-.icon-wallet {
-  width: 1.021484375em;
 }
 /*# sourceMappingURL=style.css.map */
