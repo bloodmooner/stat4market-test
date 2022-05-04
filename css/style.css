@@ -1370,25 +1370,71 @@ Single-colored icons can be modified like so:
   width: 100%;
 }
 
-@media (max-width: 1280px) {
-  .promo__image {
-    width: 250px;
-    height: 450px;
-    position: absolute;
-    right: 0;
-    top: 147px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 10% 10%;
-       object-position: 10% 10%;
-  }
-}
-
 @media (max-width: 768px) {
   .promo__image {
     width: 135px;
     height: 270px;
     top: -45px;
+  }
+}
+
+.promo__image-container {
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  .promo__image-container {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 147px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__image-container {
+    width: 135px;
+    height: 270px;
+    top: -45px;
+  }
+}
+
+.promo__hero {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 1700px) {
+  .promo__hero {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .promo__hero {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -10% 10%;
+       object-position: -10% 10%;
+  }
+}
+
+.promo__hero-bg {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 1280px) {
+  .promo__hero-bg {
+    display: none;
   }
 }
 
